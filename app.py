@@ -2,7 +2,7 @@ import urllib.request
 
 urls_file = open("urls.txt")
 content = urls_file.readlines()
-
+urls_file.close()
     
 
 def check_connectivity(url):
@@ -15,3 +15,4 @@ def check_connectivity(url):
 
 for i in content:
     check_connectivity(i)
+
